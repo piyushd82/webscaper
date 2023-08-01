@@ -63,9 +63,8 @@ def index():
                                 #Joining to the single string
                                 final_set.add(div_text[1:]+p_text)
                         # Split the strings and store in a list of lists
-                        data_list = [item.split('|') for item in final_set]
-                        print(data_list)
-                    
+                        data_list = [item.split('|') for item in final_set if item.strip()]
+                        #print(data_list)
                         return render_template('base.html', set_data=data_list)
                 except Exception as e:
                     print(e)
@@ -75,6 +74,24 @@ def index():
     else:
         return render_template('index.html')
 
+def printtocsv(data_list):
+        file_path = 'csv_file.csv'
+        if not os.path.exists(file_path):
+                with open(file_path, 'w') as f:
+                        f.write("Rating, Heading, Review Comments, Name, Location, Date \n" )
+
+        f = open(file_path, 'a')
+
+        for data in data_list:
+                length = len(data)
+                if len(data) > 0:
+                        for item in data:
+                                if item != "":
+                                        f.write("\""+item+"\"")
+                                        if data[length -1] != item:
+                                                f.write(",")
+        f.write("\n")
+        f.close()
 
 if __name__ == "__main__":
     app.run()

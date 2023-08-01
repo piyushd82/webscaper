@@ -12,3 +12,19 @@ INFO:werkzeug:127.0.0.1 - - [31/Jul/2023 19:49:30] "[37mGET /static/css/main.cs
 INFO:werkzeug:127.0.0.1 - - [31/Jul/2023 19:49:56] "[37mGET / HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [31/Jul/2023 19:50:16] "[37mPOST /review HTTP/1.1[0m" 200 -
 INFO:werkzeug:127.0.0.1 - - [31/Jul/2023 19:54:46] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:12:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:12:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:12:37] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:root:[Errno 2] No such file or directory: 'data\\csv_file.csv'
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:12:42] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:13:47] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:root:'charmap' codec can't encode character '\U0001f30e' in position 25: character maps to <undefined>
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:13:53] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:18:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:18:34] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:18:59] "[37mPOST /review HTTP/1.1[0m" 200 -
+INFO:werkzeug: * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [01/Aug/2023 19:27:55] "[37mPOST /review HTTP/1.1[0m" 200 -
