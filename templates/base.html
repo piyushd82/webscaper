@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Rating</th>
+            <th>Heading</th>
+            <th>Review Comments</th>
+            <th> Name </th>
+            <th> Location </th>
+            <th> Date</th>
+        </tr>
+        {% for line_item in set_data %}
+        <tr>
+            {% for item in line_item %}
+            <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor%}
+    </table>
+</body>
+</html>
